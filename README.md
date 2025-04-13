@@ -15,18 +15,20 @@ url w3schools.com/html
 url w3schools.com/css
 ### CSS Units
 #### Absolute Units
-px - pixels
-pt - points
-cm - centimeters
-mm - millimeters
-in - inches
+* px - pixels
+* pt - points
+* cm - centimeters
+* mm - millimeters
+* in - inches
 #### Relative Units
-% - percentage relative to parent
-em - relative to font-size
-rem - relative to root font-size
-vh - viewport height
-vw - viewport width
+* % - percentage relative to parent
+* em - relative to font-size
+* rem - relative to root font-size
+* vh - viewport height
+* vw - viewport width
 
 ## Javascript
 
 
+## Markdown
+url markdownguide.org
