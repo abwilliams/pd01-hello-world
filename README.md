@@ -12,8 +12,12 @@ url w3schools.com/html
 
 
 ## CSS
-url w3schools.com/css
+url's
+* w3schools.com/css
+* css-tricks.com/snippets/css/a-guide-to-flexbox
+* flexboxfroggy.com
 ### CSS Units
+Julia Evans @b0rk "CSS units" cartoon
 #### Absolute Units
 * px - pixels
 * pt - points
@@ -26,6 +30,8 @@ url w3schools.com/css
 * rem - relative to root font-size
 * vh - viewport height
 * vw - viewport width
+### CSS Specificity
+ (High to Low) : Inline - ID - Class - Tag
 
 ## Javascript
 
