@@ -8,8 +8,9 @@ Take a look for yourself.
 
 Information Sources:
 ## HTML
-url w3schools.com/html
-
+url's
+* w3schools.com/html
+* www.freecodecamp.org/news/html-starter-template-a-basic-html5-boilerplate-for-index-html/
 
 ## CSS
 url's
@@ -34,7 +35,8 @@ Julia Evans @b0rk "CSS units" cartoon
  (High to Low) : Inline - ID - Class - Tag
 
 ## Javascript
-
+url's
+* https://plebdevs.com/content?tag=cheatsheet
 
 ## Markdown
 url markdownguide.org
