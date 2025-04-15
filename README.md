@@ -54,7 +54,11 @@ Julia Evans @b0rk "CSS units" cartoon
 
 ## JavaScript
 * https://plebdevs.com/content?tag=cheatsheet
-JavaScript is predominantly used for Document Object Model (DOM) manipulation; Event listening; Retrieving external data (Async Operations & Fetch API).
+* https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+JavaScript is predominantly used for : -
+* Document Object Model (DOM) manipulation;
+* Event listening;
+* Retrieving external data (Async Operations & Fetch API).
 ### Variable declaration
 * var - function-scoped (avoid using in modern JavaScript).
 * let - block-scoped. Can be reassigned.
