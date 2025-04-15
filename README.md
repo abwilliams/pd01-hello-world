@@ -52,7 +52,7 @@ Julia Evans @b0rk "CSS units" cartoon
 ### CSS Specificity
  (High to Low) : Inline - ID - Class - Tag
 
-## Javascript
+## JavaScript
 * https://plebdevs.com/content?tag=cheatsheet
 JavaScript is predominantly used for Document Object Model (DOM) manipulation; Event listening; Retrieving external data (Async Operations & Fetch API).
 ### Variable declaration
