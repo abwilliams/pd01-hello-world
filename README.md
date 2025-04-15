@@ -54,6 +54,12 @@ Julia Evans @b0rk "CSS units" cartoon
 
 ## Javascript
 * https://plebdevs.com/content?tag=cheatsheet
+JavaScript is predominantly used for Document Object Model (DOM) manipulation; Event listening; Retrieving external data (Async Operations & Fetch API).
+### Variable declaration
+* var - function-scoped (avoid using in modern JavaScript).
+* let - block-scoped. Can be reassigned.
+* const - block-scoped. Can't be reassigned (but object properties can be modified).
+
 
 ## Markdown
 * https://markdownguide.org
