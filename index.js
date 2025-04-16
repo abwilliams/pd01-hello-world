@@ -3,8 +3,8 @@ let currentCurrency = "USD";
 
 async function fetchBitcoinPrice() {
     // Construct the API URL with the current currency
-    const apiUrl = 'https://api.coinbase.com/v2/prices/BTC-${currentCurrency}/spot';
-
+    const apiUrl = `https://api.coinbase.com/v2/prices/BTC-${currentCurrency}/spot`;
+    
     try {
         // Fetch data from the API
         let response = await fetch(apiUrl);
@@ -14,10 +14,11 @@ async function fetchBitcoinPrice() {
         const bitcoinPrice = jsonData.data.amount;
 
         //Updated the price display on the webpage
-        document.getElementById("price").textContent = '${currentCurrency} $${bitcoinPrice}' ;
+        document.getElementById("price").textContent = `${currentCurrency} $${bitcoinPrice}` ;
 
     } catch (error) {
         // Log any errors that occur during the fetch operation
+        // console.error("BTC PRICE = ", bitcoinPrice)
         console.error("Error fetching bitcoin price", error);    
     }
 }
