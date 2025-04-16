@@ -23,6 +23,16 @@ async function fetchBitcoinPrice() {
     }
 }
 
+function togglePriceVisibility() {
+    // Get the element that displays the price.
+    const priceElement = document.getElementById("price");
+    // Toggle between hiding and showing the price.
+    if (priceElement.style.display === "none") {
+        priceElement.style.display = "inline";
+    } else {
+        priceElement.style.display = "none" ;
+    }
+}
 
 function updateDateTime() {
     // Get the element where the dat/time will be displayed.
@@ -35,9 +45,14 @@ function updateDateTime() {
 
 // Wait for the DOM to be fully loaded before setting up the event listeners
 document.addEventListener("DOMContentLoaded", function()  {
+    // Get references to the relevant DOM elements
+    const toggleButton = document.getElementById("toggle-button");
+    // Set up listenerfor the toggle visibility button.
+    toggleButton.addEventListener("click", togglePriceVisibility);
+
     // Set up interval for automatic updates
     setInterval(fetchBitcoinPrice, 5000);      // Update date/time every 5 seconds
-    setInterval(updateDateTime, 1000);      // Update date/time every second
+    setInterval(updateDateTime, 1000);         // Update date/time every second
 
     // Initial calls to display data immediately
     fetchBitcoinPrice();
