@@ -33,12 +33,12 @@ Take a look for yourself.
 * git remote add (copy the command from the GitHub repo page).
 The setup is complete.
 13. Test the work flow : -
-a. In VCS create a new README.md.
-b. Add some text to the file.
-c. Add the file to the local repo with 'git add .' .
-d. Commit/Stage the changes 'git commit -m "Added README.md" '.
-e. Push to the cloud 'git push'.
-f. Check the repo for the file on GitHub.
+- In VCS create a new README.md.
+- Add some text to the file.
+- Add the file to the local repo with 'git add .' .
+- Commit/Stage the changes 'git commit -m "Added README.md" '.
+- Push to the cloud 'git push'.
+- Check the repo for the file on GitHub.
 Always start by pushing the local repo to the remote as this can save possible confusion.
 
 ---
