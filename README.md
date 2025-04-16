@@ -22,8 +22,26 @@ Take a look for yourself.
 6. Create a directory on your local machine for your work (mkdir ~/Docs/code/) and cd into it.
 7. Create a new file (touch index.html)
 8. Install GH CLI (paru github-cli).
-9. Open VCS (vscode . ) and open a terminal (terminal tab).
+9. Open VCS in the current directory (vscode . ) and open a terminal (terminal tab) (Ctrl+`).
 10. Configure GH CLI using the terminal of VCS. (gh ; get the code from the page that opened in the default browser; input the code into the command-lineof VCS).
+11. Create the repository on GitHub first (Click your avatar and select Repositories; New; Give a name and keep the defaults). Heed the two options, use Push Local and copy the commands.
+12. On the local machine : -
+* git init (Creates the local repo and branch name - master).
+* git status (Gives information on which files have been modified).
+* git add . (Adds everything '.' to staged status).
+* git commit -m "reason" (Updates the repo and gives a description of the changes).
+* git remote add (copy the command from the GitHub repo page).
+The setup is complete.
+13. Test the work flow : -
+a. In VCS create a new README.md.
+b. Add some text to the file.
+c. Add the file to the local repo with 'git add .' .
+d. Commit/Stage the changes 'git commit -m "Added README.md" '.
+e. Push to the cloud 'git push'.
+f. Check the repo for the file on GitHub.
+Always start by pushing the local repo to the remote as this can save possible confusion.
+
+---
 
 Information Sources:
 ## HTML
