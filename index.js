@@ -46,9 +46,17 @@ function updateDateTime() {
 // Wait for the DOM to be fully loaded before setting up the event listeners
 document.addEventListener("DOMContentLoaded", function()  {
     // Get references to the relevant DOM elements
+    const currencySelector = document.getElementById("currency-selector");
     const toggleButton = document.getElementById("toggle-button");
-    // Set up listenerfor the toggle visibility button.
+    // Set up listener for the toggle visibility button.
     toggleButton.addEventListener("click", togglePriceVisibility);
+
+    // Set up listener for the toggle visibility button.
+    currencySelector.addEventListener("change", function () {
+        currentCurrency = this.value;
+        // Fetch and display the price for the new currency
+        fetchBitcoinPrice();
+    })
 
     // Set up interval for automatic updates
     setInterval(fetchBitcoinPrice, 5000);      // Update date/time every 5 seconds
