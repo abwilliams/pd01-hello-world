@@ -74,6 +74,7 @@ Julia Evans @b0rk "CSS units" cartoon
 * https://plebdevs.com/content?tag=cheatsheet
 * https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 * https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
 JavaScript is predominantly used for : -
 * Document Object Model (DOM) manipulation;
 * Event listening;
