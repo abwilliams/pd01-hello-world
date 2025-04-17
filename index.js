@@ -43,20 +43,32 @@ function updateDateTime() {
     dateTimeElement.textContent = currentDateTime;
 }
 
+function handleCurrencyChange(currency) {
+    // Update the currency when the selection changes
+    console.log("EVENT INSIDE HANDLER currency = ", currency);
+    currentCurrency = currency;
+    console.log("CURRENT CURRENCY in handler = ", currentCurrency);
+    // Fetch and display the price for the new currency
+    fetchBitcoinPrice();
+}
+
 // Wait for the DOM to be fully loaded before setting up the event listeners
 document.addEventListener("DOMContentLoaded", function()  {
     // Get references to the relevant DOM elements
     const currencySelector = document.getElementById("currency-selector");
     const toggleButton = document.getElementById("toggle-button");
-    // Set up listener for the toggle visibility button.
-    toggleButton.addEventListener("click", togglePriceVisibility);
+    const refreshButton = document.getElementById("refresh-button");
 
     // Set up listener for the toggle visibility button.
-    currencySelector.addEventListener("change", function () {
-        currentCurrency = this.value;
-        // Fetch and display the price for the new currency
-        fetchBitcoinPrice();
-    })
+    toggleButton.addEventListener("click", togglePriceVisibility);
+    
+    // Set up event listener for the currency selector drop-down.
+    currencySelector.addEventListener("change", function() {
+        handleCurrencyChange(currencySelector.value)
+    });
+
+    //Set up an event listener for the refresh button.
+    refreshButton.addEventListener("click", fetchBitcoinPrice);
 
     // Set up interval for automatic updates
     setInterval(fetchBitcoinPrice, 5000);      // Update date/time every 5 seconds
