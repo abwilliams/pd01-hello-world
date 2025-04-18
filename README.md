@@ -22,7 +22,7 @@ Take a look for yourself.
 6. Create a directory on your local machine for your work (mkdir ~/Docs/code/) and cd into it.
 7. Create a new file (touch index.html)
 8. Install GH CLI (paru github-cli).
-9. Open VCS in the current directory (vscode . ) and open a terminal (terminal tab) (Ctrl+`).
+9. Open your working directory in VCS (cd myCode; vscode . ) and open a terminal (terminal tab) (Ctrl+`).
 10. Configure GH CLI using the terminal of VCS. (gh ; get the code from the page that opened in the default browser; input the code into the command-lineof VCS).
 11. Create the repository on GitHub first (Click your avatar and select Repositories; New; Give a name and keep the defaults). Heed the two options, use Push Local and copy the commands.
 12. On the local machine : -
